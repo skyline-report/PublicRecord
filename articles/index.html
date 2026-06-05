@@ -6,12 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Articles | Skyline Report</title>
-
   <meta name="description" content="Skyline Report articles, research, analysis, public records, and data-driven reporting." />
-
   <link rel="canonical" href="https://skyline-report.com/articles/" />
-
-  <!-- Open Graph -->
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Skyline Report" />
@@ -19,8 +15,6 @@
   <meta property="og:description" content="Skyline Report articles, research, analysis, public records, and data-driven reporting." />
   <meta property="og:url" content="https://skyline-report.com/articles/" />
   <meta property="og:image" content="https://skyline-report.com/images/climate-co2-thread/masterpiece.jpeg" />
-
-  <!-- X / Twitter -->
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Articles | Skyline Report" />
@@ -51,7 +45,7 @@
     }
 
     h1 {
-      font-size: clamp(2.25rem, 7vw, 5rem);
+      font-size: clamp(2.75rem, 10vw, 5rem);
       line-height: 1.05;
       margin: .5rem 0 1rem;
     }
@@ -63,42 +57,29 @@
       margin-bottom: 3rem;
     }
 
-    .article-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-
     .article-card {
       display: grid;
-      grid-template-columns: minmax(0, 320px) 1fr;
-      gap: 1.5rem;
-      align-items: center;
+      grid-template-columns: 360px 1fr;
       text-decoration: none;
       color: inherit;
       background: #1e293b;
       border: 1px solid #334155;
       border-radius: 18px;
       overflow: hidden;
-      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
-    }
-
-    .article-card:hover {
-      transform: translateY(-2px);
-      border-color: #38bdf8;
-      box-shadow: 0 20px 60px rgba(0,0,0,.25);
     }
 
     .article-card img {
       width: 100%;
       height: 100%;
-      min-height: 240px;
+      min-height: 250px;
       object-fit: cover;
       display: block;
+      background: #020617;
     }
 
     .article-content {
-      padding: 1.5rem 1.5rem 1.5rem 0;
+      padding: 2rem;
+      background: #1e293b;
     }
 
     .category {
@@ -137,16 +118,35 @@
     }
 
     @media (max-width: 760px) {
-      .article-card {
-        grid-template-columns: 1fr;
+      main {
+        padding: 2rem 1rem;
       }
 
-      .article-content {
-        padding: 0 1.25rem 1.5rem;
+      .intro {
+        font-size: 1.05rem;
+        margin-bottom: 2rem;
+      }
+
+      .article-card {
+        display: block;
       }
 
       .article-card img {
-        min-height: 220px;
+        height: auto;
+        min-height: 0;
+        object-fit: contain;
+      }
+
+      .article-content {
+        padding: 1.35rem;
+      }
+
+      .article-title {
+        font-size: 1.55rem;
+      }
+
+      .article-description {
+        font-size: 1rem;
       }
     }
   </style>
@@ -157,41 +157,37 @@
   <main>
     <div class="kicker">Skyline Report</div>
 
-```
+
 <h1>Articles</h1>
 
 <p class="intro">
   Research, analysis, public records, climate evidence, political accountability,
-  and data-driven reporting without the usual fog machine of bullshit.
+  and data-driven reporting.
 </p>
 
-<section class="article-grid" aria-label="Skyline Report articles">
+<a class="article-card" href="/articles/co2-temperature-correlation.html">
+  <img src="/images/climate-co2-thread/masterpiece.jpeg" alt="Graphic explaining the relationship between carbon dioxide and global temperature over time." />
 
-  <a class="article-card" href="/articles/co2-temperature-correlation.html">
-    <img src="/images/climate-co2-thread/masterpiece.jpeg" alt="Graphic explaining the relationship between carbon dioxide and global temperature over time." />
+  <div class="article-content">
+    <div class="category">Climate</div>
 
-    <div class="article-content">
-      <div class="category">Climate</div>
-
-      <div class="article-title">
-        CO₂ and Temperature: The Correlation Deniers Don’t Want You to Understand
-      </div>
-
-      <div class="article-description">
-        A visual examination of atmospheric carbon dioxide, global temperature,
-        geological time scales, and the misconceptions often used in climate denial arguments.
-      </div>
-
-      <div class="read-more">Read the article →</div>
+    <div class="article-title">
+      CO₂ and Temperature: The Correlation Deniers Don’t Want You to Understand
     </div>
-  </a>
 
-</section>
+    <div class="article-description">
+      A visual examination of atmospheric carbon dioxide, global temperature,
+      geological time scales, and the misconceptions often used in climate denial arguments.
+    </div>
+
+    <div class="read-more">Read the article →</div>
+  </div>
+</a>
 
 <footer>
   © 2026 Skyline Report
 </footer>
-```
+
 
   </main>
 </body>
